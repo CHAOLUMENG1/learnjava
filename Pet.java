@@ -1,33 +1,19 @@
-package javaText;
+package jp.dcnet.it.c07;
 
 public class Pet {
+	private String name;
+	private int age;
 
-	protected String cat;
-	protected String dog;
-	protected int catAge;
-	protected int dogAge;
-
-	public Pet(String cat, String dog, int catAge, int dogAge) {
-
-		/**this.cat = cat;
-		this.catAge = catAge;
-		this.dog = dog;
-		this.dogAge = dogAge;**/
+	public Pet(String name, int age) {
+		this.name = name;
+		this.age = age;
 	}
 
-	public String getCat() {
-		return cat;
+	public String getName() {
+		return name;
 	}
 
-	public  String getDog() {
-		return dog;
-	}
-
-	public int getCatAge() {
-		return catAge;
-	}
-
-	public int getDogAge() {
-		return dogAge;
+	public int getAge() {
+		return age;
 	}
 }
