@@ -1,18 +1,21 @@
-package jp.dcnet.it.c08;
+package jp.dcnet.it.c09;
+
+import java.awt.event.ActionEvent;
+
+//import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JFrame;
 
 public class Q1 {
-	/**
-	 * コードの出⼒
-	 * @param args
-	 */
-public static void main(String[] args) {
-		String x = "a";
-		String y = "a";
-		System.out.println(x == y); // true ? false? 原因は ?
-		System.out.println(x.equals(y));
-		String empty = "";
-		String nullString = "null";
-		System.out.println(nullString.equals(empty));//空白と文字の違い
+	public static void main(String[] args) {
+		JFrame window = new JFrame("DCNet Java 教育");
+		window.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		window.setSize(800, 600);
+		JButton btn = new JButton("hello world");
+		window.getContentPane().add(btn);
+		btn.addActionListener((ActionEvent e) -> {
+			System.out.println("ボタンクリックしました。");
+		});
+		window.setVisible(true);
 	}
-
 }
